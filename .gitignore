@@ -1,0 +1,11 @@
+venv/
+*__pycache__*
+build/
+.idea/
+*.pkl
+*.tif
+*.gif
+*.png
+Publication/Dataset/*
+OrganoIDModel
+!Publication/Dataset/*.zip
