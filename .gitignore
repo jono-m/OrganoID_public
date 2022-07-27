@@ -7,5 +7,4 @@ build/
 *.gif
 *.png
 Publication/Dataset/*
-OrganoIDModel
 !Publication/Dataset/*.zip

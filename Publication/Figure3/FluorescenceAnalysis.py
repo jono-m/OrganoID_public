@@ -19,12 +19,12 @@ def GetXY(name: str):
     return None
 
 
-def Replicate(xy: int):
-    return xy % 6
+def Replicate(xY: int):
+    return xY % 6
 
 
-def GetDosage(xy: int):
-    return dosages[int((xy - 1) / 6)]
+def GetDosage(xY: int):
+    return dosages[int((xY - 1) / 6)]
 
 
 piImages = LoadPILImages(Path(r"Publication\Dataset\GemcitabinePI"))

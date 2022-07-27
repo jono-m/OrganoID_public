@@ -1,4 +1,5 @@
-# Split.py -- a sub-program that randomly splits ground-truth data into training and validation sets.
+# Split.py -- a sub-program that randomly splits ground-truth data into training and validation
+# sets.
 
 from CommandLine.Program import Program
 import argparse
@@ -14,7 +15,8 @@ class Split(Program):
 
     def SetupParser(self, parser: argparse.ArgumentParser):
         parser.add_argument("inputPath", help="Path to image and segmentation data. "
-                                              "Directory should have the subfolders images/ and segmentations/",
+                                              "Directory should have the subfolders images/"
+                                              " and segmentations/",
                             type=pathlib.Path)
         parser.add_argument("outputPath", type=pathlib.Path,
                             help="Path where the split images will be saved.")

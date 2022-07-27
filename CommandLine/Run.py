@@ -1,7 +1,6 @@
 from CommandLine.Program import Program
 import argparse
 import pathlib
-from typing import List
 
 
 class Run(Program):
@@ -84,7 +83,7 @@ class Run(Program):
         # Load the images
         print("Loading model...")
         print("-" * 100)
-        if parserArgs.modelPath.suffix == ".tflite":
+        if parserArgs.modelPath.is_file():
             model = LoadLiteModel(parserArgs.modelPath)
         else:
             model = LoadModel(parserArgs.modelPath)

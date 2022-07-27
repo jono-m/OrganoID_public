@@ -25,7 +25,7 @@ def BuildCorrPlot(data: np.ndarray, label0: str, label1: str, pointName: str,
         units = " (" + units + ")"
     ccc, loc, hic = linr_ci(data[:, 0], data[:, 1])
     r, p, lo, hi = pearsonr_ci(data[:, 0], data[:, 1])
-
+    print(metricName + str((r, p, lo, hi)))
     maxData = np.max(data)
     plt.subplots(1, 2, figsize=(9, 4))
     plt.subplot(1, 2, 1)

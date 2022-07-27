@@ -19,8 +19,10 @@ programs = [program() for program in programs]
 
 # Load sub-program arguments
 for program in programs:
-    program.SetupParser(subparsers.add_parser(program.Name(), help=program.Description(),
-                                              formatter_class=argparse.ArgumentDefaultsHelpFormatter))
+    program.SetupParser(
+        subparsers.add_parser(program.Name(),
+                              help=program.Description(),
+                              formatter_class=argparse.ArgumentDefaultsHelpFormatter))
 
 # Parse all command-line arguments.
 args = parser.parse_args()

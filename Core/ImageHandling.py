@@ -157,7 +157,7 @@ def sort_paths_nicely(paths: List[pathlib.Path]):
     def tryint(s):
         try:
             return int(s)
-        except:
+        except ValueError:
             return s
 
     def alphanum_key(s):

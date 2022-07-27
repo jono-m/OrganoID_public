@@ -3,7 +3,7 @@ import numpy as np
 
 
 def pearsonr_ci(x, y, alpha=0.05):
-    ''' calculate Pearson correlation along with the confidence interval using scipy and numpy
+    """ calculate Pearson correlation along with the confidence interval using scipy and numpy
     Parameters
     ----------
     x, y : iterable object such as a list or np.array
@@ -18,7 +18,7 @@ def pearsonr_ci(x, y, alpha=0.05):
       The corresponding p value
     lo, hi : float
       The lower and upper bound of confidence intervals
-    '''
+    """
 
     r, p = stats.pearsonr(x, y)
     r_z = np.arctanh(r)
@@ -30,7 +30,8 @@ def pearsonr_ci(x, y, alpha=0.05):
 
 
 def linr_ci(x, y, alpha=0.05):
-    ''' calculate Lin concordance correlation along with the confidence interval using scipy and numpy
+    """ calculate Lin concordance correlation along with the confidence interval using scipy and
+    numpy
     Parameters
     ----------
     x, y : iterable object such as a list or np.array
@@ -45,7 +46,7 @@ def linr_ci(x, y, alpha=0.05):
       The corresponding p value
     lo, hi : float
       The lower and upper bound of confidence intervals
-    '''
+    """
 
     meanX = np.mean(x)
     meanY = np.mean(y)

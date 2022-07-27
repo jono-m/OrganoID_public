@@ -17,8 +17,8 @@ def GetXY(name: str):
     return None
 
 
-def GetDosage(xy: int):
-    return dosages[int((xy - 1) / 6)]
+def GetDosage(xY: int):
+    return dosages[int((xY - 1) / 6)]
 
 
 brightfieldImages = LoadPILImages(Path(r"Publication\Dataset\GemcitabineBF"))

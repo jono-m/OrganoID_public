@@ -50,7 +50,7 @@ ious.insert(1, sum(ious[1:], []))
 
 print("Summary statistics:")
 for name, iou in zip(names, ious):
-    print("\t%s: %f (SD=%f)" % (name, np.mean(iou), np.std(iou)))
+    print("\t%s: %f (SD=%f)" % (name, float(np.mean(iou)), float(np.std(iou))))
 
 print("Statistical testing:")
 for i in range(len(names)):

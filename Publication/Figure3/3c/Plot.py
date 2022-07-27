@@ -7,7 +7,6 @@ import colorsys
 import pandas
 import seaborn
 import numpy as np
-from PIL import Image
 
 fontsize = 10
 corrColor = [x / 255 for x in (0, 205, 108)]

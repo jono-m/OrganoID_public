@@ -5,7 +5,6 @@ sys.path.append(str(Path(".").resolve()))
 
 from PIL import Image
 from Core.Model import PrepareImagesForModel, LoadLiteModel, Detect
-import numpy as np
 from Core.ImageHandling import ImagesToHeatmaps, LabeledImagesToColoredImages, LoadPILImages
 from Core.Identification import Label, Cleanup, DetectEdges
 
